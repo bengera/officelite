@@ -1,0 +1,15 @@
+.primary-header {
+    text-align: center;
+
+
+  &__illustration {
+    margin: 5rem auto 0 auto;
+    // width: 210px;
+    width: 65%;
+    height: auto;
+  }
+}
+
+.hero-heading {
+    line-height: 48px;
+}
