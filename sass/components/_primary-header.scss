@@ -1,6 +1,5 @@
 .primary-header {
-    text-align: center;
-
+  text-align: center;
 
   &__illustration {
     margin: 5rem auto 0 auto;
@@ -11,5 +10,22 @@
 }
 
 .hero-heading {
-    line-height: 48px;
+  line-height: 48px;
+}
+
+.logo {
+  padding-top: 3rem;
+}
+
+.container {
+  position: relative;
+}
+
+.background-pattern {
+  position: absolute;
+  width: 458px;
+  height: auto;
+  top: -125px;
+  z-index: -1;
+  
 }
