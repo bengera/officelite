@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .button {
-  display: inline-flex;
+  // display: inline-flex;
   cursor: pointer;
   text-decoration: none;
   line-height: 1;
@@ -10,6 +10,8 @@
   border-radius: 28px;
   transition: 275ms ease;
   border: 0;
+  // width: 200px;
+  // height: 56px;
 
 
   &[data-type="dark"] {
@@ -22,16 +24,14 @@
     background-color: clr(primary, 100);
     color: clr(primary, 400);
    
-    
-    
+       
   }
 
   &[data-type="light"] {
     background-color: clr(neutral, 100);
     color: clr(primary, 400);
    
-    
-    
+       
   }
 
   &[data-type="neutral"]:is(:hover, :focus) {
