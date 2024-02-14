@@ -9,3 +9,9 @@ body {
   line-height: 1.5;
   
 }
+
+.wrap {
+  position: relative;
+  background: linear-gradient(to bottom, #FAFAFA 55%, #25293A 55%);
+  z-index: 0;
+}
