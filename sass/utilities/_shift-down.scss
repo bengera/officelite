@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+/*
+if $section-padding is ever updated, it will adapt with that, 
+whereas a hard-coded number would have to be updated.
+*/
+// .shift-down {
+//   transform: translateY(calc($section-padding * 1.5)); // 7 * -1.5 = 10.5rem
+// }

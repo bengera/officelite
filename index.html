@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Officelite</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,8 @@
       </header>
 
       <main>
-        <section class="cards section">
+        <!--SECTION LACKS HEADING WARNING ON VALIDATION , CONSIDER CHANGING TO DIV-->
+        <section class="cards section | shift-down">
           <div class="even-columns">
 
           <!--Basic card-->
@@ -75,14 +76,38 @@
           </div>
 
           </div><!--even columns end-->
-          
-          
+                    
         </section>
+
+      
       </main>
+    </div><!--container end-->
+
+        <footer class="footer bg-primary-600">
+               <div class="footer__content | container">
+                <div class="countdown | fw-bold">
+                  <p class="countdown__announcement-date | text-uppercase | text-center">Coming <span class="clr-primary-400">4 Nov 2020</span></p>
+                  <div class="countdown__boxes">
+                  <div class="countdown__box | bg-primary-500 | text-center"><p class="countdown__days-value | clr-neutral-100 | fs-800">47</p>days</div>
+                  <div class="countdown__box | bg-primary-500 | text-center"><p class="countdown__hours-value | clr-neutral-100 | fs-800">07</p>hours</div>
+                  <div class="countdown__box | bg-primary-500 | text-center"><p class="countdown__minutes-value | clr-neutral-100 | fs-800">56</p>min</div>
+                  <div class="countdown__box | bg-primary-500 | text-center"><p class="countdown__seconds-value | clr-neutral-100 | fs-800">14</p>sec</div>
+                </div><!--countdown boxes end-->
+                </div>
+                <div class="footer__button-container">
+                  <button class="button" data-type="dark">Get Started</button>
+                </div>
+               </div> <!--content end-->
+             
+        </footer>
+     
+   
+
+  </body>
+</html>
+
+
 
   <!-- <button class="button" data-type="dark">Button 1</button>
     <button class="button" data-type="neutral">Button 2</button>
     <button class="button" data-type="light">Button 3</button> -->
-  </div><!--container end-->
-  </body>
-</html>

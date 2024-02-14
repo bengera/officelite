@@ -5,13 +5,12 @@ $ff-base: $ff-sans;
 
 
 $font-sizes: (
-  900: clamp(2.5rem, 5vw, 3.5rem),
-  850: 3.5rem,
-  800: 2.5rem,
-  500: 1.25rem,
-  450: 1.25rem,
-  400: 1.125rem,
-  300: 1rem,
+  900: clamp(2.5rem, 5vw, 3.5rem), // 40px vw 56px
+  850: 3.5rem, // 56px
+  800: 2.5rem, // 40px
+  500: 1.25rem, // 20px
+  400: 1.125rem, // 18px
+  300: 1rem, // 16px
 );
 
 $fw-400: 400; 

@@ -1,0 +1,42 @@
+.footer {
+    padding:2rem;
+    padding-bottom: 5rem;
+   
+    
+
+    &__content {
+        padding: 1rem;
+    }
+
+    &__button-container {
+        text-align: center;
+    }
+}
+
+
+.countdown {
+    
+
+    &__announcement-date {
+        letter-spacing: 5px;
+        margin-bottom: 1.125rem;
+        
+        
+    }
+
+    &__boxes {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__box {
+        // border: 2px solid red;
+        padding: 1rem;
+        padding: 1.2rem;
+        border-radius: 5px;
+        background-color: green;
+    }
+}
+
