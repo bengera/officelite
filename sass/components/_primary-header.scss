@@ -9,15 +9,22 @@
 
   &__illustration {
     margin: 5rem auto 0 auto;
-    width: 65%;
-    height: auto;
-    max-width: 475px;
-    @include mq(medium) {
-      margin: 0;
-      width: 100%;
-      margin-top: 4rem;
-    }
+    width: clamp(16.688rem, 35vw, 29.688rem);
+    
   }
+
+  // &__illustration {
+  //   margin: 5rem auto 0 auto;
+  //   width: 65%;
+  //   height: auto;
+  //   max-width: 475px;
+  //   @include mq(medium) {
+  //     width: 475px;
+  //     max-width: 100%;
+  //     margin: 0;
+  //     object-fit: contain;
+  //   }
+  // }
 
   &__content-container {
     @include mq(medium) {
@@ -30,7 +37,7 @@
 
   &__text-content {
     @include mq(medium) {
-      max-width: 21.5rem;
+      max-width: 28.5rem;
     }
    
   }
