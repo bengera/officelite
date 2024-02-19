@@ -72,7 +72,7 @@
 .para-general {
   line-height: 1.7;
   @include mq(medium) {
-    width: 37ch;
+    // width: 37ch;
   }
   
 }
