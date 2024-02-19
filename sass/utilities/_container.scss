@@ -6,6 +6,12 @@
 
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
+
+
+  @include mq(medium) {
+    --padding: #{$container-inline-padding-medium} * 2;
+  }
+  
 }
 
 .container[data-type="narrow"] {
