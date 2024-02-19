@@ -46,6 +46,12 @@
 
 .btn-card {
   justify-self: left;
+  margin-inline: auto;
+
+  @include mq(medium) {
+    margin-inline: initial;
+  }
+
 }
 
 
