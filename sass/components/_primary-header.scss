@@ -3,11 +3,36 @@
 .primary-header {
   text-align: center;
 
+  @include mq(medium) {
+   text-align: initial;
+  }
+
   &__illustration {
     margin: 5rem auto 0 auto;
-    // width: 210px;
     width: 65%;
     height: auto;
+    max-width: 475px;
+    @include mq(medium) {
+      margin: 0;
+      width: 100%;
+      margin-top: 4rem;
+    }
+  }
+
+  &__content-container {
+    @include mq(medium) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: 6.5rem;
+      gap: 3.9rem;
+    }
+  }
+
+  &__text-content {
+    @include mq(medium) {
+      max-width: 21.5rem;
+    }
+   
   }
 }
 
@@ -34,5 +59,20 @@
   height: auto;
   top: -125px;
   z-index: -1;
+
+  @include mq(medium) {
+    width: 666px;
+ height: 666px;
+ top: -186px;
+ right: -296px;
+   }
+  
+}
+
+.para-general {
+  line-height: 1.7;
+  @include mq(medium) {
+    width: 37ch;
+  }
   
 }
