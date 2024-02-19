@@ -19,4 +19,8 @@ body {
   position: relative;
   background: linear-gradient(to bottom, #FAFAFA 55%, #25293A 55%);
   z-index: 0;
+
+  @include mq(medium) {
+    background: linear-gradient(to bottom, #FAFAFA 57%, #25293A 57%);
+      }
 }
