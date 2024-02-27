@@ -8,12 +8,20 @@
   text-align: center;
 
   @include mq(medium) {
-    display: grid;
+    // display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
     padding: 3rem;
     text-align: left;
   }
+
+  @include mq(large) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
 
   &__type,
   &__price,
@@ -71,6 +79,10 @@
     background-size: 853px;
     background-position: -310px -280px;
     }
+
+    @include mq(large) {
+      background-position: -235px -350px;
+      }
 }
 
 ul {

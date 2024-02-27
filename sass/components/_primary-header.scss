@@ -69,11 +69,20 @@
 
   @include mq(medium) {
     width: 666px;
- height: 666px;
- top: -186px;
- right: -296px;
-   }
-  
+    height: 666px;
+    top: -186px;
+    right: -296px;
+  }
+
+  @include mq(large) {
+    width: 969px;
+    height: 969px;
+    top: -225px;
+    right: -258px;
+  }
+
+
+
 }
 
 .para-general {

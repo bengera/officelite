@@ -6,10 +6,20 @@
 
   &__content {
     padding: 1rem;
+
+    @include mq(large) {
+      display: flex;
+      justify-content: space-between;
+      bordeR: 2px solid red;
+    }
   }
 
   &__button-container {
     text-align: center;
+
+    @include mq(large) {
+      align-self: center;
+      }
   }
 }
 

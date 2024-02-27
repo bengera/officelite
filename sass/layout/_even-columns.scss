@@ -8,6 +8,11 @@
     grid-auto-flow: row;
     
   }
+
+  @include mq(large) {
+    grid-auto-flow: column;
+    gap: 30px;
+    }
   
 }
 
