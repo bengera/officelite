@@ -17,6 +17,8 @@ const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
 const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
+// ADD EXPIRATION MESSAGE TO FUNCTION
+// NUMBER LIKE 206 overflow out of number box
 
 dayNumber.textContent = days;
 hourNumber.textContent = hours;
