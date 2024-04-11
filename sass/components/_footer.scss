@@ -10,7 +10,7 @@
     @include mq(large) {
       display: flex;
       justify-content: space-between;
-      bordeR: 2px solid red;
+      // border: 2px solid red;
     }
   }
 
@@ -19,7 +19,7 @@
 
     @include mq(large) {
       align-self: center;
-      }
+    }
   }
 }
 
@@ -40,12 +40,11 @@
     padding: 1rem;
     padding: 1.2rem;
     border-radius: 5px;
-       
-  
+    width: 120px;
   }
 
   &__number {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     @include mq(medium) {
       font-size: 3.5rem;
     }
@@ -73,4 +72,11 @@
     bottom: -199px;
   }
 
+  @include mq(large) {
+    width: 1768px;
+    height: 1115px;
+    right: 654px;
+    left: -572px;
+    bottom: -28px;
+  }
 }
