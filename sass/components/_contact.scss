@@ -20,3 +20,26 @@
   color: clr(primary, 500);
   margin-bottom: 24px;
 }
+
+.form {
+  background-color: #FFF;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 24px;
+}
+
+input {
+  height: 45px;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 19.41px;
+  border: 0;
+  border-bottom: 1px solid clr(neutral, 300);
+  
+}

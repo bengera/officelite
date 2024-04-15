@@ -36,7 +36,19 @@
 
   &[data-type="neutral"]:is(:hover, :focus) {
     opacity: 75%;
+
+    
 }
+
+
+&[data-type="form-submit"] {
+  background-color: clr(primary, 400);
+  color: clr(neutral, 100);
+ 
+     
+}
+
+
 
   &:is(:hover, :focus):not([data-type="neutral"]) {
        opacity: 75%;
