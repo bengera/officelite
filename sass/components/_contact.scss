@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.left-content {
+  max-width: 540px;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.countdown {
+
+  margin-top: 64px;
+  text-align: center;
+
+ 
+}
+
+.contact-heading {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: $fw-700;
+  color: clr(primary, 500);
+  margin-bottom: 24px;
+}

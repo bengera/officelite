@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Officelite - Sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sass/main.scss">
+    <script src="main.js" defer></script>
+  </head>
+<body>
+    
+<div class="wrap-contact">
+  <img class="background-pattern" src="./assets/home/bg-pattern-header.svg" alt="background-pattern">
+<div class="container">
+
+    <main>
+      <img src="./assets/logo.svg" alt="logo" class="logo">
+        <div class="left-content">
+            <h1 class="contact-heading">Work smarter.<br> Save time.</h1>
+            <p>Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. 
+                We are moving into final development and getting ready for official launch soon.</p>
+
+                <div class="countdown | fw-bold">
+                  <p class="countdown__announcement-date | text-uppercase  | padding-small">Coming<span class="clr-primary-400"> 4 Nov 2025</span></p>
+                  <div class="countdown__boxes">
+                  <div class="countdown__box | bg-primary-100 | text-center"><p id="days" class="countdown__number | clr-primary-400">47</p><p class="countdown__time-value">days</p></div>
+                  <div class="countdown__box | bg-primary-100 | text-center"><p id="hours" class="countdown__number | clr-primary-400">07</p><p class="countdown__time-value">hours</p></div>
+                  <div class="countdown__box | bg-primary-100 | text-center"><p id="minutes" class="countdown__number | clr-primary-400">56</p><p class="countdown__time-value">min</p></div>
+                  <div class="countdown__box | bg-primary-100 | text-center"><p id="seconds" class="countdown__number | clr-primary-400">14</p><p class="countdown__time-value">sec</p></div>
+                </div><!--countdown boxes end-->
+                </div>
+        </div><!--left-content end-->
+       
+        <form class="form" id="form">
+
+          <!--NAME-->
+          <div class="form-control">
+            <label for="name"></label>
+            <input type="text" placeholder="Name" id="name">
+            <img class="i-check" src="./assets/sign-up/icon-check.svg" alt="check icon">
+            <img class="i-error" src="./assets/sign-up/icon-cross.svg" alt="error icon">
+          </div>
+
+          <!--EMAIL-->
+          <div class="form-control">
+            <label for="email"></label>
+            <input type="email" placeholder="Email Address" id="email">
+            <img class="i-check" src="./assets/sign-up/icon-check.svg" alt="check icon">
+            <img class="i-error" src="./assets/sign-up/icon-cross.svg" alt="error icon">
+          </div>
+
+          <!--PACK-->
+          <div class="form-control">
+            <label for="packs"></label>
+            <select id="packs" name="pack">
+              <option value="basic">Basic Pack: Free </option>
+              <option value="pro">Pro Pack: $9.99 </option>
+              <option value="ultimate">Ultimate Pack: $19.99 </option>
+            </select>
+            <img class="i-check" src="./assets/sign-up/icon-check.svg" alt="check icon">
+            <img class="i-error" src="./assets/sign-up/icon-cross.svg" alt="error icon">
+          </div>
+
+          <!--PHONE NUMBER-->
+          <div class="form-control">
+            <label for="phone-number"></label>
+            <input type="number" placeholder="Phone Number" id="phone-number">
+            <img class="i-check" src="./assets/sign-up/icon-check.svg" alt="check icon">
+            <img class="i-error" src="./assets/sign-up/icon-cross.svg" alt="error icon">
+          </div>
+
+          <!--COMPANY-->
+          <div class="form-control">
+            <label for="company"></label>
+            <input type="text" placeholder="Company" id="company">
+            <img class="i-check" src="./assets/sign-up/icon-check.svg" alt="check icon">
+            <img class="i-error" src="./assets/sign-up/icon-cross.svg" alt="error icon">
+          </div>
+
+         
+          
+
+        </form>
+    </main>
+
+</div> <!--container end-->
+</div> <!--wrap end-->
+
+</body>
+
+</html>
