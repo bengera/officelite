@@ -10,8 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         // Define your entry points here
-        index: resolve(__dirname, 'src/index.html'),
-        signup: resolve(__dirname, 'src/signup.html'),
+        index: resolve(__dirname, 'index.html'),
+        signup: resolve(__dirname, 'signup.html'),
       }
     }
   }
