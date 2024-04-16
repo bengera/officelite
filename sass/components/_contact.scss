@@ -45,6 +45,7 @@
   position: relative;
 }
 
+
 input, select {
   
   height: 45px;
@@ -67,7 +68,7 @@ select {
 .i-error, .i-check {
   position: absolute;
   right: 1rem;
-  top: 0.5rem;
+  top: 0.7rem;
   display: none;
 }
 
@@ -89,3 +90,4 @@ select {
   height: 290px;
   z-index: 0;
 }
+

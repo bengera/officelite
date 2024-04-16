@@ -4,6 +4,8 @@ const email = document.getElementById('email');
 const packs = document.getElementById('packs');
 const phoneNumber = document.getElementById('phone-number');
 const company = document.getElementById('company');
+const checkIcons = document.querySelectorAll('.i-check');
+const errorIcons = document.querySelectorAll('.i-error');
 
 document.addEventListener('DOMContentLoaded', function() {
     name.value = '';
@@ -12,14 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
     company.value = ''
 });
 
-
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkInputs();
 })
 
 function checkInputs() {
+   
+    checkIcons.forEach(icon => {
+        icon.style.display = 'none';
+    });
+
+    errorIcons.forEach(icon => {
+        icon.style.display = 'none';
+    });
     const nameValue = name.value.trim();
     const emailValue = email.value.trim();
     const phoneNumberValue = phoneNumber.value.trim();
