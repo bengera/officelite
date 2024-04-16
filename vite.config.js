@@ -12,6 +12,8 @@ export default defineConfig({
         // Define your entry points here
         index: resolve(__dirname, 'index.html'),
         signup: resolve(__dirname, 'signup.html'),
+        countdown: resolve(__dirname, 'js/countdown.js'),
+        form: resolve(__dirname, 'js/form.js'), 
       }
     }
   }
