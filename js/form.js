@@ -86,6 +86,8 @@ function setErrorFor(input) {
     const formControl = input.parentElement;
     const errorIcon = formControl.querySelector('.i-error');
     errorIcon.setAttribute("style", "display:block");
+    input.style.color = '#F05B5B';
+    input.style.borderColor = '#F05B5B';
 }
 
 function isEmail(email) {
