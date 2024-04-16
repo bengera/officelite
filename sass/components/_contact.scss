@@ -2,6 +2,7 @@
 
 .wrap-contact {
   background: linear-gradient(to bottom, #FAFAFA 75%, #25293A 75%);
+  position: relative;
 }
 
 .left-content {
@@ -36,6 +37,7 @@
   gap: 1rem;
   width: 100%;
   margin: 90px auto 70px auto;
+  z-index: 1;
  
 }
 
@@ -78,13 +80,12 @@ select {
 }
 
 .large-spiral-contact {
-  background: url(/assets/home/bg-pattern-footer.svg);
+  background: url(/assets/sign-up/bg-pattern-side.svg);
   position: absolute;
   background-size: cover;
-  // height: 500px;
-  width: 500px;
-  left: -42px;
-  right: -530px;
-  top: 803px;
+  left: 21px;
+  width: 371px;
+  top: 969px;
+  height: 290px;
   z-index: 0;
 }
