@@ -1,5 +1,9 @@
 @use "../abstracts/" as *;
 
+.wrap-contact {
+  background: linear-gradient(to bottom, #FAFAFA 75%, #25293A 75%);
+}
+
 .left-content {
   max-width: 540px;
   margin-top: 75px;
@@ -22,24 +26,65 @@
 }
 
 .form {
+  position: relative;
   background-color: #FFF;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 0 auto;
   border-radius: 10px;
   gap: 1rem;
   width: 100%;
-  margin-top: 24px;
+  margin: 90px auto 70px auto;
+ 
 }
 
-input {
+.form-control {
+  position: relative;
+}
+
+input, select {
+  
   height: 45px;
   width: 100%;
   font-size: 16px;
   padding-left: 19.41px;
   border: 0;
-  border-bottom: 1px solid clr(neutral, 300);
+  color: clr(neutral, 200);
+  border-bottom: 1px solid clr(neutral, 200);
+  background-color: #FFF;
+  padding-bottom: 2px;
   
+   
+}
+
+select {
+  color: clr(neutral, 300)
+}
+
+.i-error, .i-check {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  display: none;
+}
+
+#company {
+  margin-bottom: 40px;
+}
+
+.z-index {
+  z-index: 0;
+}
+
+.large-spiral-contact {
+  background: url(/assets/home/bg-pattern-footer.svg);
+  position: absolute;
+  background-size: cover;
+  // height: 500px;
+  width: 500px;
+  left: -42px;
+  right: -530px;
+  top: 803px;
+  z-index: 0;
 }
