@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/main.scss">
-    <script type="module" src="./js/form.js" defer></script>
-    <script type="module" src="./js/countdown.js" defer></script>
+    <script type="module" src="./js/form.js"></script>
+    <script type="module" src="./js/countdown.js"></script>
   </head>
 <body>
     
@@ -57,12 +57,19 @@
 
           <!--PACK-->
           <div class="form-control">
-            <label for="packs"></label>
-            <select id="packs" name="pack">
-              <option value="basic">Basic Pack: Free </option>
-              <option value="pro">Pro Pack: $9.99 </option>
-              <option value="ultimate">Ultimate Pack: $19.99 </option>
-            </select>
+            <img class="i-arrow" src="./assets/sign-up/icon-arrow-down.svg" alt="arrow">
+            <button id="btn-packs" class="button-form"><span class="fw-bold">Basic Pack </span>Free</button>
+            <!--dropdown start-->
+            <div class="drop-down">
+              <ul class="drop-down__list">
+                <li class="drop-down__item"><span>Basic Pack</span> Free
+                  <img class="i-check" src="./assets/sign-up/icon-check.svg" alt="check icon">
+                  <img class="i-error" src="./assets/sign-up/icon-cross.svg" alt="error icon"></li>
+                <li class="drop-down__item"><span>Pro Pack</span> $9.99</li>
+                <li class="drop-down__item"><span>Ultimate Pack</span> $19.99</li>
+              </ul>
+            </div>
+              <!--dropdown end-->
             <img class="i-check" src="./assets/sign-up/icon-check.svg" alt="check icon">
             <img class="i-error" src="./assets/sign-up/icon-cross.svg" alt="error icon">
           </div>
@@ -85,7 +92,7 @@
 
           <button class="button" type="submit" data-type="form-submit"> Get on the list</button>
          
-          </div>
+          
           
 
         </form>

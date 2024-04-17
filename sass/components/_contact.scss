@@ -43,10 +43,11 @@
 
 .form-control {
   position: relative;
+  
 }
 
 
-input, select {
+input, .button-form {
   
   height: 45px;
   width: 100%;
@@ -61,8 +62,11 @@ input, select {
    
 }
 
-select {
-  color: clr(neutral, 300)
+
+.button-form {
+  text-align: left;
+  color: clr(neutral, 300);
+  cursor: pointer;
 }
 
 .i-error, .i-check {
@@ -72,9 +76,17 @@ select {
   display: none;
 }
 
+.i-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;;
+  
+}
+
 #company {
   margin-bottom: 40px;
 }
+
 
 .z-index {
   z-index: 0;

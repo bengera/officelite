@@ -6,6 +6,7 @@ const phoneNumber = document.getElementById('phone-number');
 const company = document.getElementById('company');
 const checkIcons = document.querySelectorAll('.i-check');
 const errorIcons = document.querySelectorAll('.i-error');
+const packButton = document.getElementById('btn-packs');
 
 document.addEventListener('DOMContentLoaded', function() {
     name.value = '';
@@ -17,6 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkInputs();
+})
+
+packButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('pack button clicked')
 })
 
 function checkInputs() {
@@ -79,6 +85,8 @@ function setSuccessFor(input) {
     const formControl = input.parentElement;
     const checkIcon = formControl.querySelector('.i-check');
     checkIcon.setAttribute("style", "display:block");
+    input.style.color = '#25293A';
+    input.style.borderColor = '#25293A';
 
 }
 
