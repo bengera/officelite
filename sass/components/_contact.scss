@@ -47,6 +47,7 @@
 }
 
 
+
 input, .button-form {
   
   height: 45px;
@@ -69,11 +70,37 @@ input, .button-form {
   cursor: pointer;
 }
 
+// ADD UNIVERSAL STYLING AFTER COMPLETING i-check positioning
 .i-error, .i-check {
   position: absolute;
   right: 1rem;
   top: 0.7rem;
-  display: none;
+  // display: none;
+  display: block;
+}
+
+.i-check-drop {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  // display: none;
+  display: block;
+}
+
+.drop-down {
+  border: 1px solid rgba(51, 57, 80, 0.153273);
+  border-radius: 8px;
+  &__list {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  }
+
+  &__item {
+    position: relative;
+  }
 }
 
 .i-arrow {
