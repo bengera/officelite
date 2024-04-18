@@ -70,6 +70,10 @@ input, .button-form {
   cursor: pointer;
 }
 
+#first-word {
+  color: clr(primary, 500);
+}
+
 // ADD UNIVERSAL STYLING AFTER COMPLETING i-check positioning
 .i-error, .i-check {
   display: none;

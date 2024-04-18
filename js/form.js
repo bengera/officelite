@@ -29,8 +29,15 @@ dropDownItems.forEach(item => {
             })
 
             iconCheck.classList.add("show");
-            const packText = item.textContent;
-            packButton.textContent = packText;
+            ////////////////////////EXPERIMENT//////////////////
+            const firstWordSpan = document.getElementById('first-word');
+            firstWordSpan.textContent = item.textContent;
+           
+            
+
+            // WORKING SOLUTION WITHOUT STYLING
+            // const packText = item.textContent;
+            // packButton.textContent = packText;
             dropDown.classList.toggle("hidden");
 
         }
