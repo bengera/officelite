@@ -7,6 +7,7 @@ const company = document.getElementById('company');
 const checkIcons = document.querySelectorAll('.i-check');
 const errorIcons = document.querySelectorAll('.i-error');
 const packButton = document.getElementById('btn-packs');
+const dropDown = document.getElementById('drop-down-list');
 
 document.addEventListener('DOMContentLoaded', function() {
     name.value = '';
@@ -23,6 +24,7 @@ form.addEventListener('submit', (e) => {
 packButton.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('pack button clicked')
+    dropDown.classList.toggle("hidden");
 })
 
 function checkInputs() {

@@ -58,7 +58,7 @@ input, .button-form {
   color: clr(neutral, 200);
   border-bottom: 1px solid clr(neutral, 200);
   background-color: #FFF;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
   
    
 }
@@ -75,16 +75,20 @@ input, .button-form {
   position: absolute;
   right: 1rem;
   top: 0.7rem;
-  // display: none;
-  display: block;
+  display: none;
+  
 }
 
 .i-check-drop {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
-  // display: none;
-  display: block;
+  display: none;
+  
+}
+
+.drop-down.hidden {
+  display: none;
 }
 
 .drop-down {
@@ -92,8 +96,7 @@ input, .button-form {
   border: 1px solid rgba(51, 57, 80, 0.153273);
   border-radius: 8px;
   background-color: clr(neutral,100);
- 
-  ////////////////////////////////////////////
+   ////////////////////////////////////////////
   position: absolute;
   z-index: 200;
   top: 195px;
