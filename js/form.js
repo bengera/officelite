@@ -10,23 +10,43 @@ const packButton = document.getElementById('btn-packs');
 const dropDown = document.getElementById('drop-down-list');
 const formArrow = document.getElementById('f-arrow');
 
+// Get all li elements
 const dropDownItems = document.querySelectorAll('.drop-down__item');
 
-dropDownItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    const iconCheck = item.querySelector(".i-check-drop");
-    const isChecked = iconCheck.classList.contains("show");
+dropDownItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const iconCheck = item.querySelector('.i-check-drop');
+        // If element has checkmark, do nothing.
+        if (iconCheck.classList.contains("show")){
+            console.log('item contains check')
+            return;
+        } else {
+             // If not remove checkmark from all elements and apply to clicked item
+            console.log('no check found')
+            const iconChecks = document.querySelectorAll('.i-check-drop');
+            iconChecks.forEach(check => {
+                check.classList.remove('show');
+            })
+        }
+    })
+})
 
-    if (!isChecked) {
-      return;
-    } else {
-      dropDownItems.forEach((item) => {
-        const checkIcon = item.querySelector(".i-check-drop");
-        checkIcon.classList.remove("show");
-      });
-    }
-  });
-});
+// dropDown.addEventListener('click', () => {
+//     dropDownItems.forEach(item => {
+        
+//         const iconCheck = document.querySelector('.i-check-drop');
+//         if (iconCheck.classList.contains('show')){
+//             console.log('item has checkmark')
+//             return;
+//         } else {
+//             console.log('item has no checkmark');
+//         }
+
+//     })
+// })
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     name.value = '';
