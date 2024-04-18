@@ -31,7 +31,7 @@ dropDownItems.forEach(item => {
             iconCheck.classList.add("show");
             const packText = item.textContent;
             packButton.textContent = packText;
-            
+            dropDown.classList.toggle("hidden");
 
         }
     })
