@@ -27,6 +27,9 @@ dropDownItems.forEach(item => {
             iconChecks.forEach(check => {
                 check.classList.remove('show');
             })
+
+            iconCheck.classList.add("show");
+
         }
     })
 })
