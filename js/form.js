@@ -29,26 +29,13 @@ dropDownItems.forEach(item => {
             })
 
             iconCheck.classList.add("show");
+            const packText = item.textContent;
+            packButton.textContent = packText;
+            
 
         }
     })
 })
-
-// dropDown.addEventListener('click', () => {
-//     dropDownItems.forEach(item => {
-        
-//         const iconCheck = document.querySelector('.i-check-drop');
-//         if (iconCheck.classList.contains('show')){
-//             console.log('item has checkmark')
-//             return;
-//         } else {
-//             console.log('item has no checkmark');
-//         }
-
-//     })
-// })
-
-
 
 
 document.addEventListener('DOMContentLoaded', function() {
