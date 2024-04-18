@@ -10,6 +10,24 @@ const packButton = document.getElementById('btn-packs');
 const dropDown = document.getElementById('drop-down-list');
 const formArrow = document.getElementById('f-arrow');
 
+const dropDownItems = document.querySelectorAll('.drop-down__item');
+
+dropDownItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const iconCheck = item.querySelector(".i-check-drop");
+    const isChecked = iconCheck.classList.contains("show");
+
+    if (!isChecked) {
+      return;
+    } else {
+      dropDownItems.forEach((item) => {
+        const checkIcon = item.querySelector(".i-check-drop");
+        checkIcon.classList.remove("show");
+      });
+    }
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     name.value = '';
     email.value = '';

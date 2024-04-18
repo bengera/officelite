@@ -80,6 +80,11 @@ input, .button-form {
   
 }
 
+.i-check-drop.show {
+  display: block;
+}
+
+
 .i-check-drop {
   display: none;
   position: absolute;
@@ -88,6 +93,11 @@ input, .button-form {
   
   
 }
+
+
+// .i-check.show, .i-error.show {
+//   display: block;
+// }
 
 .drop-down.hidden {
   display: none;
@@ -119,6 +129,7 @@ input, .button-form {
   }
   &__item {
     position: relative;
+    cursor: pointer;
 
     &:not(:last-child):after {
         content: '';
