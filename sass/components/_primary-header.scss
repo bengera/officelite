@@ -11,6 +11,10 @@
     margin: 5rem auto 0 auto;
     width: clamp(16.688rem, 35vw, 29.688rem);
     
+    @include mq(medium) {
+      margin: 5rem 0rem 5rem 5rem;
+    }
+    
   }
 
   // &__illustration {

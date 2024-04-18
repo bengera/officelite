@@ -1,7 +1,8 @@
 @use "../abstracts/" as *;
 
 html,body {
-  overflow-x: hidden;
+  overflow-x:hidden;
+  
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   color: clr(neutral, 300);
   background-color: #FAFAFA;
   line-height: 1.5;
+  
   
   
 }
