@@ -8,6 +8,7 @@ const checkIcons = document.querySelectorAll('.i-check');
 const errorIcons = document.querySelectorAll('.i-error');
 const packButton = document.getElementById('btn-packs');
 const dropDown = document.getElementById('drop-down-list');
+const formArrow = document.getElementById('f-arrow');
 
 document.addEventListener('DOMContentLoaded', function() {
     name.value = '';
@@ -25,6 +26,7 @@ packButton.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('pack button clicked')
     dropDown.classList.toggle("hidden");
+    formArrow.classList.toggle("flip");
 })
 
 function checkInputs() {

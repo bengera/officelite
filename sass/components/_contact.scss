@@ -72,18 +72,20 @@ input, .button-form {
 
 // ADD UNIVERSAL STYLING AFTER COMPLETING i-check positioning
 .i-error, .i-check {
+  display: none;
   position: absolute;
   right: 1rem;
   top: 0.7rem;
-  display: none;
+ 
   
 }
 
 .i-check-drop {
+  display: none;
   position: absolute;
   right: 1rem;
   top: 0.5rem;
-  display: none;
+  
   
 }
 
@@ -129,6 +131,11 @@ input, .button-form {
     
       }
     }
+}
+
+.i-arrow.flip {
+  transform: rotate(180deg);
+  // transition: transform 0.3s ease;
 }
 
 .i-arrow {
