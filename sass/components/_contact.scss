@@ -11,10 +11,19 @@
   
 }
 
+.container.sign-up {
+  position: relative;
+  @include mq(large) {
+    height: 100vh;
+  }
+
+  
+}
+
 .all-content {
   @include mq(large) {
     display: flex;
-    height: 100vh;
+    margin-top: 50px;
   }
 }
 
