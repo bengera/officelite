@@ -9,6 +9,12 @@
   max-width: 540px;
   margin-top: 75px;
   text-align: center;
+  margin: 0 auto;
+
+  // @include mq(medium) {
+  
+  // }
+
 }
 
 .countdown {
@@ -38,6 +44,7 @@
   width: 100%;
   margin: 90px auto 70px auto;
   z-index: 1;
+  max-width: 445px;
  
 }
 
@@ -58,7 +65,7 @@ input, .button-form {
   color: clr(neutral, 200);
   border-bottom: 1px solid clr(neutral, 200);
   background-color: #FFF;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
   
    
 }
