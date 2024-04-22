@@ -3,6 +3,19 @@
 .wrap-contact {
   background: linear-gradient(to bottom, #FAFAFA 75%, #25293A 75%);
   position: relative;
+
+  @include mq(large) {
+    background: linear-gradient(to right, #FAFAFA 75%, #25293A 75%);
+    }
+
+  
+}
+
+.all-content {
+  @include mq(large) {
+    display: flex;
+    height: 100vh;
+  }
 }
 
 .left-content {
@@ -11,16 +24,46 @@
   text-align: center;
   margin: 0 auto;
 
-  // @include mq(medium) {
-  
-  // }
+  @include mq(large) {
+    text-align: left;
+    margin: 0;
+  }
 
+
+}
+
+.right-content {
+
+  @include mq(large) {
+    margin-left: 8rem;
+  }
+
+ 
 }
 
 .countdown {
 
   margin-top: 64px;
   text-align: center;
+
+  @include mq(large) {
+    margin-top: 40px;
+  }
+
+  &__announcement-date {
+    @include mq(large) {
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+
+  &__boxes {
+    @include mq(large) {
+      justify-content: left;
+    }
+
+  }
+
 
  
 }
@@ -50,6 +93,12 @@
   margin: 90px auto 70px auto;
   z-index: 1;
   max-width: 445px;
+
+  @include mq(large) {
+    width: 445px;
+   margin: 90px 50px 70px 50px;
+         }
+   
  
 }
 
@@ -202,6 +251,11 @@ input,
       height: 407px;
       margin-top: -352px;
     }
+
+    @include mq(large) {
+      display:none;
+            }
+      
   }
 // .large-spiral-contact {
 //   background: url(/assets/sign-up/bg-pattern-side.svg);

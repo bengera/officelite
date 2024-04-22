@@ -1,7 +1,6 @@
 const form = document.getElementById('form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
-const packs = document.getElementById('packs');
 const phoneNumber = document.getElementById('phone-number');
 const company = document.getElementById('company');
 const checkIcons = document.querySelectorAll('.i-check');
