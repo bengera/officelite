@@ -10,6 +10,8 @@ const packButton = document.getElementById('btn-packs');
 const dropDown = document.getElementById('drop-down-list');
 const formArrow = document.getElementById('f-arrow');
 
+
+// DROPDOWN
 // Get all li elements
 const dropDownItems = document.querySelectorAll('.drop-down__item');
 
@@ -31,21 +33,21 @@ dropDownItems.forEach(item => {
             })
 
             iconCheck.classList.add("show");
-            ////////////////////////EXPERIMENT//////////////////
-            const firstWordSpan = document.getElementById('first-word');
-            firstWordSpan.textContent = item.textContent;
-           
             
-
-            // WORKING SOLUTION WITHOUT STYLING
-            // const packText = item.textContent;
-            // packButton.textContent = packText;
+            const firstWordSpan = document.getElementById('first-word');
+            const splitString = item.textContent.split(' ');
+            console.log(splitString);
+            const firstAndSecondWord = splitString.slice(0, 2).join(' ');
+            firstWordSpan.textContent = firstAndSecondWord;
+            const price = splitString[2];
+            secondWord.textContent = ' ' + price;
+           
             dropDown.classList.toggle("hidden");
 
         }
     })
 })
-
+// DROPDOWN END
 
 document.addEventListener('DOMContentLoaded', function() {
     name.value = '';
