@@ -128,7 +128,7 @@ input, .button-form {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
   }
   &__item {
@@ -169,14 +169,23 @@ input, .button-form {
   z-index: 0;
 }
 
+.spiral-container {
+  // border: 2px solid red;
+  width: 100%;
+  height: 320px;
+  background: url(/assets/sign-up/bg-pattern-side.svg);
+  margin-top: -265px;
+  background-size: cover;
+}
 // .large-spiral-contact {
 //   background: url(/assets/sign-up/bg-pattern-side.svg);
 //   position: absolute;
-//   background-size: cover;
-//   left: 21px;
-//   width: 371px;
-//   top: 969px;
-//   height: 290px;
+
+// left: -301px;
+// width: 734px;
+// top: 664px;
+// height: 981px;
+  
 //   z-index: 0;
 // }
 
