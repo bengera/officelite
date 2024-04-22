@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/main-Ath8m8JU.js"></script>
-    <script type="module" crossorigin src="/assets/form-w40geAFS.js"></script>
+    <script type="module" crossorigin src="/assets/main-spb0NrJ1.js"></script>
+    <script type="module" crossorigin src="/assets/form-PLjTDwlv.js"></script>
     <script type="module" crossorigin src="/assets/countdown-AGPjYDEx.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-7X5gyrx5.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-tCFyFa6o.css">
   </head>
 <body>
     
@@ -40,6 +40,22 @@
        
         <form class="form" id="form">
 
+          <!--dropdown start-->
+          <div id="drop-down-list" class="drop-down hidden">
+            <ul class="drop-down__list">
+              <li class="drop-down__item | clr-primary-500 | fw-bold">Basic Pack<span class="clr-neutral-200" id="pack-type" style="margin-left: 5px;"> Free</span>
+                <img class="i-check-drop show" src="data:image/svg+xml,%3csvg%20width='15'%20height='12'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%207.504L3.994%2010.5%2013.494%201'%20stroke='%235175FF'%20stroke-width='2'%20fill='none'%20fill-rule='evenodd'/%3e%3c/svg%3e" alt="check icon">
+                </li>
+              <li class="drop-down__item clr-primary-500 | fw-bold">Pro Pack<span class="clr-neutral-200" id="pack-type" style="margin-left: 5px;"> $9.99</span>
+                <img class="i-check-drop" src="data:image/svg+xml,%3csvg%20width='15'%20height='12'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%207.504L3.994%2010.5%2013.494%201'%20stroke='%235175FF'%20stroke-width='2'%20fill='none'%20fill-rule='evenodd'/%3e%3c/svg%3e" alt="check icon"> 
+                </li>
+              <li class="drop-down__item clr-primary-500 | fw-bold">Ultimate Pack<span class="clr-neutral-200" id="pack-type" style="margin-left: 5px;"> $19.99</span>
+                <img class="i-check-drop" src="data:image/svg+xml,%3csvg%20width='15'%20height='12'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%207.504L3.994%2010.5%2013.494%201'%20stroke='%235175FF'%20stroke-width='2'%20fill='none'%20fill-rule='evenodd'/%3e%3c/svg%3e" alt="check icon">
+                </li>
+            </ul>
+          </div>
+            <!--dropdown end-->
+
           <!--NAME-->
           <div class="form-control">
             <label for="name"></label>
@@ -58,12 +74,9 @@
 
           <!--PACK-->
           <div class="form-control">
-            <label for="packs"></label>
-            <select id="packs" name="pack">
-              <option value="basic">Basic Pack: Free </option>
-              <option value="pro">Pro Pack: $9.99 </option>
-              <option value="ultimate">Ultimate Pack: $19.99 </option>
-            </select>
+            <img id="f-arrow" class="i-arrow" src="data:image/svg+xml,%3csvg%20width='13'%20height='8'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20stroke='%235175FF'%20stroke-width='2'%20d='M1%201l5.5%205.5L12%201'%20fill='none'%20fill-rule='evenodd'/%3e%3c/svg%3e" alt="arrow">
+            <button id="btn-packs" class="button-form"><span id="first-word" class="fw-bold">Basic Pack </span><span id="second-word">Free</span></button>
+            
             <img class="i-check" src="data:image/svg+xml,%3csvg%20width='15'%20height='12'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%207.504L3.994%2010.5%2013.494%201'%20stroke='%235175FF'%20stroke-width='2'%20fill='none'%20fill-rule='evenodd'/%3e%3c/svg%3e" alt="check icon">
             <img class="i-error" src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3ccircle%20fill='%23F05B5B'%20cx='10'%20cy='10'%20r='10'/%3e%3cpath%20d='M12.475%206.61l1.414%201.415-2.475%202.475%202.475%202.475-1.414%201.414L10%2011.914l-2.475%202.475-1.414-1.414L8.585%2010.5%206.11%208.025l1.414-1.414L10%209.085l2.475-2.474z'%20fill='%23FFF'/%3e%3c/g%3e%3c/svg%3e" alt="error icon">
           </div>
@@ -86,14 +99,17 @@
 
           <button class="button" type="submit" data-type="form-submit"> Get on the list</button>
          
-          </div>
+          
           
 
         </form>
     </main>
 
+    <div class="spiral-container">
+    <!-- <div class="large-spiral-contact"></div> -->
+  </div>
 </div> <!--container end-->
-<div class="large-spiral-contact"></div>
+<!-- <div class="large-spiral-contact"></div> -->
 </div> <!--wrap end-->
 
 </body>
