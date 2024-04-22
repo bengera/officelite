@@ -30,6 +30,11 @@
   font-weight: $fw-700;
   color: clr(primary, 500);
   margin-bottom: 24px;
+
+  @include mq(medium) {
+    margin-top: 104px;
+       }
+ 
 }
 
 .form {
@@ -191,7 +196,13 @@ input,
   background: url(/assets/sign-up/bg-pattern-side.svg);
   margin-top: -265px;
   background-size: cover;
-}
+
+  @include mq(medium) {
+      background-position-y: -217px;
+      height: 407px;
+      margin-top: -352px;
+    }
+  }
 // .large-spiral-contact {
 //   background: url(/assets/sign-up/bg-pattern-side.svg);
 //   position: absolute;
