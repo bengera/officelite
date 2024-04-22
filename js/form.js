@@ -21,6 +21,8 @@ dropDownItems.forEach(item => {
             console.log('item contains check')
             return;
         } else {
+            const secondWord = document.getElementById('second-word');
+            secondWord.textContent = '';
              // If not remove checkmark from all elements and apply to clicked item
             console.log('no check found')
             const iconChecks = document.querySelectorAll('.i-check-drop');
