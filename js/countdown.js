@@ -4,7 +4,7 @@ const minuteNumber = document.getElementById('minutes');
 const secondNumber = document.getElementById('seconds');
 const countdownBoxDays = document.querySelector('div.countdown__box:nth-child(1)');
 
-const targetDate = new Date('2025-11-04T00:00:00');
+const targetDate = new Date('2025-04-04T00:00:00');
 
 // COUNTDOWN TIMER
 function countdown() {
@@ -34,7 +34,6 @@ if (days.toString().length >= 3){
 }
         
     }
-
 
 
 }

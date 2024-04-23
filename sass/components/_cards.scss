@@ -20,6 +20,7 @@
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    
   }
 
 
@@ -101,6 +102,15 @@ ul {
    margin-top: 1rem;
   }
 
+
+}
+
+.btn-card {
+
+  @include mq(large) {
+    max-width: 190px;
+    margin: 0 auto;
+    }
 
 }
 

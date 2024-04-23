@@ -1,0 +1,1 @@
+import"./main-JDVQOTSL.js";import"./form-Qi4iiRuR.js";import"./countdown-eb4qvjyF.js";const e=document.querySelector(".breaker");window.addEventListener("resize",()=>{window.screen.innerWidth<720?(console.log("Mobile screen visible"),e.style.display="block"):(console.log("Tablet and larger visible"),e.style.display="none")});
