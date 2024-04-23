@@ -15,6 +15,7 @@
   position: relative;
   @include mq(large) {
     height: 100vh;
+    
   }
 
   
@@ -59,6 +60,7 @@
 
   @include mq(large) {
     margin-top: 40px;
+    text-align: left;
   }
 
   &__announcement-date {
@@ -151,7 +153,6 @@
 input,
 .button-form {
 
-  // height: 45px;
   width: 100%;
   font-size: 16px;
   padding: 10px 20px;
@@ -164,6 +165,10 @@ input,
 
   @include mq(medium) {
     padding: 16px 20px;
+  }
+
+  @include mq(large) {
+    padding: 10px 20px;
   }
 
 
@@ -296,15 +301,3 @@ input,
             }
       
   }
-// .large-spiral-contact {
-//   background: url(/assets/sign-up/bg-pattern-side.svg);
-//   position: absolute;
-
-// left: -301px;
-// width: 734px;
-// top: 664px;
-// height: 981px;
-  
-//   z-index: 0;
-// }
-

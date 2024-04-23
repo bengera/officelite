@@ -48,7 +48,7 @@ dropDownItems.forEach(item => {
 })
 // DROPDOWN END
 
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
     name.value = '';
     email.value = '';
     phoneNumber.value = '';
