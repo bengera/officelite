@@ -109,8 +109,12 @@
 }
 
 #countdown-boxes-contact {
-  justify-content: center;
+  @include mq(medium) {
+        justify-content: center;
+  }
+ 
 }
+
 
 .contact-heading {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
@@ -312,3 +316,5 @@ input,
             }
       
   }
+
+  

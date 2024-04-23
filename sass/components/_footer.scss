@@ -27,6 +27,10 @@
   &__announcement-date {
     letter-spacing: 5px;
     margin-bottom: 1.125rem;
+    @include mq(large) {
+      text-align: left;
+    }
+   
   }
 
   &__boxes {
@@ -34,8 +38,9 @@
     justify-content: center;
     gap: 0.8rem;
     margin-bottom: 2.5rem;
-    @include mq(medium) {
+    @include mq(large) {
       justify-content: left;
+      text-align: center;
       
     }
    
