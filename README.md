@@ -1,6 +1,6 @@
 # Frontend Mentor - officelite website solution
 
-This is a solution to the [Officelite website challenge on Frontend Mentor](https://elaborate-dragon-0e7077.netlify.app/). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Officelite website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/officelite-coming-soon-site-M4DIPNz8g). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Overview
 Despite the challenge being labelled as a 'Junior' challenge I found that the layout proved fairly challening to build and change for different devices. Making a background pattern on the wrapper of the site to give the illusion that there is an element that looks like a footer is something that I haven't done before.
