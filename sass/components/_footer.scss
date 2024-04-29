@@ -3,15 +3,19 @@
 .footer {
   padding: 0;
   // padding-bottom: 5rem;
-
+  @include mq(large) {
+    margin-top: 84px;
+ 
+  }
  
 
   &__content {
-    padding: 1rem;
+    padding: 1rem 2rem 4rem 2rem;
     @include mq(large) {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 5rem;
+      padding: 0;
+      padding-bottom: 3rem;
     }
 
     
