@@ -35,8 +35,10 @@ Users should be able to:
 
 
 ### What I learned
-I have tried wrapping a `<span>` tag around the words ‘Basic pack’ to change the color and style the drop down but I found out that this would make the HTML invalid as options elements are not supposed to have children.
+To create the form dropdown I initially tried wrapping a `<span>` tag around the words ‘Basic pack’ to change the color and style the drop down but I found out that this would make the HTML invalid as options elements are not supposed to have children.
 So I ended up changing this to be a `ul` and `li` list instead.
+
+![](drop-down.PNG)
 
 Background pattern makes a solid blue color at the bottom of the layout.
 
