@@ -1,12 +1,22 @@
 @use "../abstracts/" as *;
 
+.cards {
+  
+
+  @include mq(large) {
+    padding-bottom: 2rem;
+ 
+  }
+}
+
 .card {
   display: grid;
   gap: 1rem;
   padding: $card-body-padding;
   border-radius: 13px;
   text-align: center;
-
+  
+  
   @include mq(medium) {
     
     grid-template-columns: 1fr 1fr;
@@ -17,12 +27,16 @@
 
   @include mq(large) {
     display: flex;
+    grid-template-columns: 2fr 1.5fr;
     flex-direction: column;
     text-align: center;
     gap: 2rem;
     
+    
+    
   }
 
+ 
 
   &__type,
   &__price,
@@ -32,9 +46,8 @@
       align-self: center;
     }
   }
-    
 
-
+ 
   &__type {
     margin-bottom: 2.5rem;
     @include mq(medium) {
@@ -65,7 +78,12 @@
     margin-bottom: 2.5rem;
     @include mq(medium) {
       margin: 0;
+      margin-top: -40px;
       grid-column: 1;
+    }
+
+    @include mq(large) {
+      margin-top:-20px;
     }
   }
 }

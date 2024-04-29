@@ -250,6 +250,11 @@ input,
   margin-left: auto; 
   margin-right: auto; 
   width: 95%; 
+  
+  @include mq(large) {
+    top: 254px;
+          }
+ 
  
 
   &__list {

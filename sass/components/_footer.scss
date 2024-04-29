@@ -1,17 +1,20 @@
 @use "../abstracts/" as *;
 
 .footer {
-  padding: 2rem;
-  padding-bottom: 5rem;
+  padding: 0;
+  // padding-bottom: 5rem;
+
+ 
 
   &__content {
     padding: 1rem;
-
     @include mq(large) {
       display: flex;
       justify-content: space-between;
-      // border: 2px solid red;
+      padding-bottom: 5rem;
     }
+
+    
   }
 
   &__button-container {
@@ -27,6 +30,7 @@
   &__announcement-date {
     letter-spacing: 5px;
     margin-bottom: 1.125rem;
+    
     @include mq(large) {
       text-align: left;
     }
@@ -90,7 +94,7 @@
     width: 1768px;
     height: 1115px;
     right: 654px;
-    left: -572px;
+    left: -310px;
     bottom: -28px;
   }
 }
