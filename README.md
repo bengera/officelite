@@ -3,7 +3,7 @@
 This is a solution to the [Officelite website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/officelite-coming-soon-site-M4DIPNz8g). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Overview
-Despite the challenge being labelled as a 'Junior' challenge I found that the layout proved fairly challening to build and change for different devices. Making a background pattern on the wrapper of the site to give the illusion that there is an element that looks like a footer is something that I haven't done before.
+Despite the challenge being labelled as a 'Junior' challenge I found that the layout proved fairly challening to build and change for different devices. Making a background pattern on the wrapper of the site to give the illusion that there is an element that looks like a footer is something that I hadn't done before.
 
 ### The challenge
 
@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- [Live site](https://bengera.github.io/myteam/)
+- [Live site](https://main--elaborate-dragon-0e7077.netlify.app/)
 
 ### Built with
 
@@ -35,6 +35,9 @@ Users should be able to:
 
 
 ### What I learned
+I have tried wrapping a `<span>` tag around the words ‘Basic pack’ to change the color and style the drop down but I found out that this would make the HTML invalid as options elements are not supposed to have children.
+So I ended up changing this to be a `ul` and `li` list instead.
+
 Background pattern makes a solid blue color at the bottom of the layout.
 
 ```scss
@@ -53,7 +56,6 @@ Background pattern makes a solid blue color at the bottom of the layout.
       }
 }
 ```
-notes here
 I added this small bit of code to change the size of the day box when there are three or more digits so the numbers don't flow out of the box.
 ```js
 if (days.toString().length >= 3){
